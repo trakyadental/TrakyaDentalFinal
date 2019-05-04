@@ -162,6 +162,17 @@
     <Compile Include="Stok\UrunDetay.Designer.cs">
       <DependentUpon>UrunDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sınıflar\Bilgilendirme.cs" />
+    <Compile Include="Sınıflar\Envanter.cs" />
+    <Compile Include="Sınıflar\HastaBilgisi.cs" />
+    <Compile Include="Sınıflar\Islem.cs" />
+    <Compile Include="Sınıflar\IslemTipi.cs" />
+    <Compile Include="Sınıflar\Markalar.cs" />
+    <Compile Include="Sınıflar\Personel.cs" />
+    <Compile Include="Sınıflar\Randevu.cs" />
+    <Compile Include="Sınıflar\Recete.cs" />
+    <Compile Include="Sınıflar\Stok.cs" />
+    <Compile Include="Sınıflar\UrunGrup.cs" />
     <EmbeddedResource Include="Hasta\RandevularFORM.resx">
       <DependentUpon>RandevularFORM.cs</DependentUpon>
     </EmbeddedResource>

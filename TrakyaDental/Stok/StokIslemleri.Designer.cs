@@ -46,13 +46,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pbAra = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.stokHareket1 = new TrakyaDental.Stok.StokHareket();
+            this.urunDetay1 = new TrakyaDental.Stok.UrunDetay();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.stokHareket1 = new TrakyaDental.Stok.StokHareket();
-            this.urunDetay1 = new TrakyaDental.Stok.UrunDetay();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStokHareketi)).BeginInit();
@@ -262,6 +262,22 @@
             this.panel3.Size = new System.Drawing.Size(889, 599);
             this.panel3.TabIndex = 2;
             // 
+            // stokHareket1
+            // 
+            this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stokHareket1.Location = new System.Drawing.Point(313, 218);
+            this.stokHareket1.Name = "stokHareket1";
+            this.stokHareket1.Size = new System.Drawing.Size(241, 173);
+            this.stokHareket1.TabIndex = 14;
+            // 
+            // urunDetay1
+            // 
+            this.urunDetay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.urunDetay1.Location = new System.Drawing.Point(130, 95);
+            this.urunDetay1.Name = "urunDetay1";
+            this.urunDetay1.Size = new System.Drawing.Size(640, 400);
+            this.urunDetay1.TabIndex = 13;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -305,22 +321,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // stokHareket1
-            // 
-            this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.stokHareket1.Location = new System.Drawing.Point(313, 218);
-            this.stokHareket1.Name = "stokHareket1";
-            this.stokHareket1.Size = new System.Drawing.Size(241, 151);
-            this.stokHareket1.TabIndex = 14;
-            // 
-            // urunDetay1
-            // 
-            this.urunDetay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.urunDetay1.Location = new System.Drawing.Point(130, 95);
-            this.urunDetay1.Name = "urunDetay1";
-            this.urunDetay1.Size = new System.Drawing.Size(640, 400);
-            this.urunDetay1.TabIndex = 13;
             // 
             // StokIslemleri
             // 
