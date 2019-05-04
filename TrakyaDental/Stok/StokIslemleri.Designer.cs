@@ -145,6 +145,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 27);
             this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "5500";
             // 
             // label4
             // 
@@ -234,6 +235,7 @@
             this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "ARA";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pbAra
             // 
@@ -311,7 +313,7 @@
             this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.stokHareket1.Location = new System.Drawing.Point(313, 218);
             this.stokHareket1.Name = "stokHareket1";
-            this.stokHareket1.Size = new System.Drawing.Size(241, 151);
+            this.stokHareket1.Size = new System.Drawing.Size(241, 202);
             this.stokHareket1.TabIndex = 14;
             // 
             // urunDetay1
