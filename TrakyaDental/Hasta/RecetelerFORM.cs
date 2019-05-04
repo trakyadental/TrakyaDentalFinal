@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace TrakyaDental
 {
-    public partial class Form1 : Form
+    public partial class RecetelerFORM : Form
     {
 
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
         Point lastLocation;
-        public Form1()
+        public RecetelerFORM()
         {
             InitializeComponent();
         }
@@ -50,10 +50,8 @@ namespace TrakyaDental
 
         private void pbHastaIslemleri_Click(object sender, EventArgs e)
         {
-            this.Hide();
             var hastaIslemForm = new HastaIslemleri();
             hastaIslemForm.ShowDialog();
-            this.Dispose();
         }
 
         private void pbMaliIslemler_Click(object sender, EventArgs e)
@@ -69,14 +67,6 @@ namespace TrakyaDental
             this.Hide();
             var klinikForm = new KlinikIslemleri();
             klinikForm.ShowDialog();
-            this.Dispose();
-        }
-
-        private void pbStokIslemleri_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var stok = new StokIslemleri();
-            stok.ShowDialog();
             this.Dispose();
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace TrakyaDental
 {
-    partial class Form1
+    partial class KlinikIslemleri
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KlinikIslemleri));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblHeader = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pbKlinikIslemleri = new System.Windows.Forms.PictureBox();
+            this.blue = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbStokIslemleri = new System.Windows.Forms.PictureBox();
+            this.pbSMSveEmail = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbMaliIslemler = new System.Windows.Forms.PictureBox();
+            this.pbRandevuDefteri = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbHastaIslemleri = new System.Windows.Forms.PictureBox();
+            this.pbPersonelBilgileri = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.personelBilgileri1 = new TrakyaDental.PersonelBilgileri();
+            this.smSveEmailIslemleri1 = new TrakyaDental.SMSveEmailIslemleri();
+            this.randevuDefteri1 = new TrakyaDental.RandevuDefteri();
+            this.pbBackToMainScreen = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKlinikIslemleri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStokIslemleri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaliIslemler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHastaIslemleri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSMSveEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRandevuDefteri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonelBilgileri)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,45 +117,30 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.pbKlinikIslemleri);
+            this.panel2.Controls.Add(this.blue);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pbStokIslemleri);
+            this.panel2.Controls.Add(this.pbSMSveEmail);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pbMaliIslemler);
+            this.panel2.Controls.Add(this.pbRandevuDefteri);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pbHastaIslemleri);
+            this.panel2.Controls.Add(this.pbPersonelBilgileri);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 46);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(229, 599);
             this.panel2.TabIndex = 1;
             // 
-            // label4
+            // blue
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(62, 209);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Klinik İşlemleri";
-            // 
-            // pbKlinikIslemleri
-            // 
-            this.pbKlinikIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbKlinikIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbKlinikIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbKlinikIslemleri.InitialImage = null;
-            this.pbKlinikIslemleri.Location = new System.Drawing.Point(7, 194);
-            this.pbKlinikIslemleri.Name = "pbKlinikIslemleri";
-            this.pbKlinikIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbKlinikIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbKlinikIslemleri.TabIndex = 7;
-            this.pbKlinikIslemleri.TabStop = false;
-            this.pbKlinikIslemleri.Click += new System.EventHandler(this.pbKlinikIslemleri_Click);
+            this.blue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(76)))), ((int)(((byte)(157)))));
+            this.blue.Enabled = false;
+            this.blue.FlatAppearance.BorderSize = 0;
+            this.blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.blue.Location = new System.Drawing.Point(209, 19);
+            this.blue.Name = "blue";
+            this.blue.Size = new System.Drawing.Size(14, 46);
+            this.blue.TabIndex = 12;
+            this.blue.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -163,25 +148,25 @@
             this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(66, 151);
+            this.label3.Location = new System.Drawing.Point(21, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(157, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Stok İşlemleri";
+            this.label3.Text = "SMS ve E-mail İşlemleri";
             // 
-            // pbStokIslemleri
+            // pbSMSveEmail
             // 
-            this.pbStokIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbStokIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbStokIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStokIslemleri.InitialImage = null;
-            this.pbStokIslemleri.Location = new System.Drawing.Point(8, 136);
-            this.pbStokIslemleri.Name = "pbStokIslemleri";
-            this.pbStokIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbStokIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStokIslemleri.TabIndex = 4;
-            this.pbStokIslemleri.TabStop = false;
-            this.pbStokIslemleri.Click += new System.EventHandler(this.pbStokIslemleri_Click);
+            this.pbSMSveEmail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbSMSveEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbSMSveEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSMSveEmail.InitialImage = null;
+            this.pbSMSveEmail.Location = new System.Drawing.Point(8, 136);
+            this.pbSMSveEmail.Name = "pbSMSveEmail";
+            this.pbSMSveEmail.Size = new System.Drawing.Size(215, 46);
+            this.pbSMSveEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSMSveEmail.TabIndex = 4;
+            this.pbSMSveEmail.TabStop = false;
+            this.pbSMSveEmail.Click += new System.EventHandler(this.pbSMSveEmail_Click);
             // 
             // label2
             // 
@@ -189,25 +174,25 @@
             this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(65, 92);
+            this.label2.Location = new System.Drawing.Point(21, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 16);
+            this.label2.Size = new System.Drawing.Size(111, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Mali İşlemleri";
+            this.label2.Text = "Randevu Defteri";
             // 
-            // pbMaliIslemler
+            // pbRandevuDefteri
             // 
-            this.pbMaliIslemler.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbMaliIslemler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbMaliIslemler.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMaliIslemler.InitialImage = null;
-            this.pbMaliIslemler.Location = new System.Drawing.Point(8, 77);
-            this.pbMaliIslemler.Name = "pbMaliIslemler";
-            this.pbMaliIslemler.Size = new System.Drawing.Size(215, 46);
-            this.pbMaliIslemler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMaliIslemler.TabIndex = 2;
-            this.pbMaliIslemler.TabStop = false;
-            this.pbMaliIslemler.Click += new System.EventHandler(this.pbMaliIslemler_Click);
+            this.pbRandevuDefteri.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbRandevuDefteri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbRandevuDefteri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbRandevuDefteri.InitialImage = null;
+            this.pbRandevuDefteri.Location = new System.Drawing.Point(8, 77);
+            this.pbRandevuDefteri.Name = "pbRandevuDefteri";
+            this.pbRandevuDefteri.Size = new System.Drawing.Size(215, 46);
+            this.pbRandevuDefteri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRandevuDefteri.TabIndex = 2;
+            this.pbRandevuDefteri.TabStop = false;
+            this.pbRandevuDefteri.Click += new System.EventHandler(this.pbRandevuDefteri_Click);
             // 
             // label1
             // 
@@ -215,45 +200,38 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(62, 34);
+            this.label1.Location = new System.Drawing.Point(21, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(116, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Hasta İşlemleri";
+            this.label1.Text = "Personel Bilgileri";
             // 
-            // pbHastaIslemleri
+            // pbPersonelBilgileri
             // 
-            this.pbHastaIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbHastaIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbHastaIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbHastaIslemleri.InitialImage = null;
-            this.pbHastaIslemleri.Location = new System.Drawing.Point(8, 19);
-            this.pbHastaIslemleri.Name = "pbHastaIslemleri";
-            this.pbHastaIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbHastaIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHastaIslemleri.TabIndex = 0;
-            this.pbHastaIslemleri.TabStop = false;
-            this.pbHastaIslemleri.Click += new System.EventHandler(this.pbHastaIslemleri_Click);
+            this.pbPersonelBilgileri.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbPersonelBilgileri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbPersonelBilgileri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbPersonelBilgileri.InitialImage = null;
+            this.pbPersonelBilgileri.Location = new System.Drawing.Point(8, 19);
+            this.pbPersonelBilgileri.Name = "pbPersonelBilgileri";
+            this.pbPersonelBilgileri.Size = new System.Drawing.Size(215, 46);
+            this.pbPersonelBilgileri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPersonelBilgileri.TabIndex = 0;
+            this.pbPersonelBilgileri.TabStop = false;
+            this.pbPersonelBilgileri.Click += new System.EventHandler(this.pbPersonelBilgileri_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.pbBackToMainScreen);
+            this.panel3.Controls.Add(this.personelBilgileri1);
+            this.panel3.Controls.Add(this.smSveEmailIslemleri1);
+            this.panel3.Controls.Add(this.randevuDefteri1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(235, 46);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(889, 599);
             this.panel3.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(258, 136);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(433, 278);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
             // 
             // panel4
             // 
@@ -264,12 +242,39 @@
             this.panel4.Size = new System.Drawing.Size(10, 599);
             this.panel4.TabIndex = 3;
             // 
-            // contextMenuStrip1
+            // personelBilgileri1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.personelBilgileri1.Location = new System.Drawing.Point(3, 0);
+            this.personelBilgileri1.Name = "personelBilgileri1";
+            this.personelBilgileri1.Size = new System.Drawing.Size(883, 578);
+            this.personelBilgileri1.TabIndex = 3;
             // 
-            // Form1
+            // smSveEmailIslemleri1
+            // 
+            this.smSveEmailIslemleri1.Location = new System.Drawing.Point(4, 0);
+            this.smSveEmailIslemleri1.Name = "smSveEmailIslemleri1";
+            this.smSveEmailIslemleri1.Size = new System.Drawing.Size(873, 578);
+            this.smSveEmailIslemleri1.TabIndex = 2;
+            // 
+            // randevuDefteri1
+            // 
+            this.randevuDefteri1.Location = new System.Drawing.Point(3, 0);
+            this.randevuDefteri1.Name = "randevuDefteri1";
+            this.randevuDefteri1.Size = new System.Drawing.Size(883, 578);
+            this.randevuDefteri1.TabIndex = 0;
+            // 
+            // pbBackToMainScreen
+            // 
+            this.pbBackToMainScreen.Image = global::TrakyaDental.Properties.Resources.goBack_2x;
+            this.pbBackToMainScreen.Location = new System.Drawing.Point(4, 0);
+            this.pbBackToMainScreen.Name = "pbBackToMainScreen";
+            this.pbBackToMainScreen.Size = new System.Drawing.Size(48, 38);
+            this.pbBackToMainScreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBackToMainScreen.TabIndex = 4;
+            this.pbBackToMainScreen.TabStop = false;
+            this.pbBackToMainScreen.Click += new System.EventHandler(this.pbBackToMainScreen_Click);
+            // 
+            // KlinikIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -282,19 +287,19 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "KlinikIslemleri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.KlinikIslemleri_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKlinikIslemleri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStokIslemleri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaliIslemler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHastaIslemleri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSMSveEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRandevuDefteri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonelBilgileri)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,16 +314,17 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbHastaIslemleri;
+        private System.Windows.Forms.PictureBox pbPersonelBilgileri;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pbKlinikIslemleri;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pbStokIslemleri;
+        private System.Windows.Forms.PictureBox pbSMSveEmail;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pbMaliIslemler;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbRandevuDefteri;
+        private RandevuDefteri randevuDefteri1;
+        private SMSveEmailIslemleri smSveEmailIslemleri1;
+        private PersonelBilgileri personelBilgileri1;
+        private System.Windows.Forms.Button blue;
+        private System.Windows.Forms.PictureBox pbBackToMainScreen;
     }
 }
 

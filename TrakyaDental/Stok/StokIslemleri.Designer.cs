@@ -1,6 +1,6 @@
 ﻿namespace TrakyaDental
 {
-    partial class Form1
+    partial class StokIslemleri
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StokIslemleri));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblHeader = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pbKlinikIslemleri = new System.Windows.Forms.PictureBox();
+            this.pbStokHareketi = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbStokIslemleri = new System.Windows.Forms.PictureBox();
+            this.pbSil = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbMaliIslemler = new System.Windows.Forms.PictureBox();
+            this.pbDetay = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbHastaIslemleri = new System.Windows.Forms.PictureBox();
+            this.pbAra = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.stokHareket1 = new TrakyaDental.Stok.StokHareket();
+            this.urunDetay1 = new TrakyaDental.Stok.UrunDetay();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKlinikIslemleri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStokIslemleri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaliIslemler)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHastaIslemleri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStokHareketi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAra)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,19 +123,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.pbKlinikIslemleri);
+            this.panel2.Controls.Add(this.pbStokHareketi);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pbStokIslemleri);
+            this.panel2.Controls.Add(this.pbSil);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pbMaliIslemler);
+            this.panel2.Controls.Add(this.pbDetay);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pbHastaIslemleri);
+            this.panel2.Controls.Add(this.pbAra);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 46);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(229, 599);
             this.panel2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(8, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 27);
+            this.textBox1.TabIndex = 9;
             // 
             // label4
             // 
@@ -137,25 +152,25 @@
             this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(62, 209);
+            this.label4.Location = new System.Drawing.Point(67, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.Size = new System.Drawing.Size(94, 16);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Klinik İşlemleri";
+            this.label4.Text = "Stok Hareketi";
             // 
-            // pbKlinikIslemleri
+            // pbStokHareketi
             // 
-            this.pbKlinikIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbKlinikIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbKlinikIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbKlinikIslemleri.InitialImage = null;
-            this.pbKlinikIslemleri.Location = new System.Drawing.Point(7, 194);
-            this.pbKlinikIslemleri.Name = "pbKlinikIslemleri";
-            this.pbKlinikIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbKlinikIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbKlinikIslemleri.TabIndex = 7;
-            this.pbKlinikIslemleri.TabStop = false;
-            this.pbKlinikIslemleri.Click += new System.EventHandler(this.pbKlinikIslemleri_Click);
+            this.pbStokHareketi.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbStokHareketi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbStokHareketi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbStokHareketi.InitialImage = null;
+            this.pbStokHareketi.Location = new System.Drawing.Point(7, 158);
+            this.pbStokHareketi.Name = "pbStokHareketi";
+            this.pbStokHareketi.Size = new System.Drawing.Size(215, 46);
+            this.pbStokHareketi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStokHareketi.TabIndex = 7;
+            this.pbStokHareketi.TabStop = false;
+            this.pbStokHareketi.Click += new System.EventHandler(this.pbStokHareketi_Click);
             // 
             // label3
             // 
@@ -163,25 +178,24 @@
             this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(66, 151);
+            this.label3.Location = new System.Drawing.Point(104, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(23, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Stok İşlemleri";
+            this.label3.Text = "Sil";
             // 
-            // pbStokIslemleri
+            // pbSil
             // 
-            this.pbStokIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbStokIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbStokIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStokIslemleri.InitialImage = null;
-            this.pbStokIslemleri.Location = new System.Drawing.Point(8, 136);
-            this.pbStokIslemleri.Name = "pbStokIslemleri";
-            this.pbStokIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbStokIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStokIslemleri.TabIndex = 4;
-            this.pbStokIslemleri.TabStop = false;
-            this.pbStokIslemleri.Click += new System.EventHandler(this.pbStokIslemleri_Click);
+            this.pbSil.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbSil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSil.InitialImage = null;
+            this.pbSil.Location = new System.Drawing.Point(8, 105);
+            this.pbSil.Name = "pbSil";
+            this.pbSil.Size = new System.Drawing.Size(215, 46);
+            this.pbSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSil.TabIndex = 4;
+            this.pbSil.TabStop = false;
             // 
             // label2
             // 
@@ -189,25 +203,25 @@
             this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(65, 92);
+            this.label2.Location = new System.Drawing.Point(93, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 16);
+            this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Mali İşlemleri";
+            this.label2.Text = "Detay";
             // 
-            // pbMaliIslemler
+            // pbDetay
             // 
-            this.pbMaliIslemler.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbMaliIslemler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbMaliIslemler.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMaliIslemler.InitialImage = null;
-            this.pbMaliIslemler.Location = new System.Drawing.Point(8, 77);
-            this.pbMaliIslemler.Name = "pbMaliIslemler";
-            this.pbMaliIslemler.Size = new System.Drawing.Size(215, 46);
-            this.pbMaliIslemler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMaliIslemler.TabIndex = 2;
-            this.pbMaliIslemler.TabStop = false;
-            this.pbMaliIslemler.Click += new System.EventHandler(this.pbMaliIslemler_Click);
+            this.pbDetay.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbDetay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbDetay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbDetay.InitialImage = null;
+            this.pbDetay.Location = new System.Drawing.Point(8, 52);
+            this.pbDetay.Name = "pbDetay";
+            this.pbDetay.Size = new System.Drawing.Size(215, 46);
+            this.pbDetay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDetay.TabIndex = 2;
+            this.pbDetay.TabStop = false;
+            this.pbDetay.Click += new System.EventHandler(this.pbDetay_Click);
             // 
             // label1
             // 
@@ -215,45 +229,68 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(62, 34);
+            this.label1.Location = new System.Drawing.Point(177, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Hasta İşlemleri";
+            this.label1.Text = "ARA";
             // 
-            // pbHastaIslemleri
+            // pbAra
             // 
-            this.pbHastaIslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbHastaIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbHastaIslemleri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbHastaIslemleri.InitialImage = null;
-            this.pbHastaIslemleri.Location = new System.Drawing.Point(8, 19);
-            this.pbHastaIslemleri.Name = "pbHastaIslemleri";
-            this.pbHastaIslemleri.Size = new System.Drawing.Size(215, 46);
-            this.pbHastaIslemleri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHastaIslemleri.TabIndex = 0;
-            this.pbHastaIslemleri.TabStop = false;
-            this.pbHastaIslemleri.Click += new System.EventHandler(this.pbHastaIslemleri_Click);
+            this.pbAra.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbAra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbAra.InitialImage = null;
+            this.pbAra.Location = new System.Drawing.Point(166, 19);
+            this.pbAra.Name = "pbAra";
+            this.pbAra.Size = new System.Drawing.Size(57, 26);
+            this.pbAra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAra.TabIndex = 0;
+            this.pbAra.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.stokHareket1);
+            this.panel3.Controls.Add(this.urunDetay1);
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(235, 46);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(889, 599);
             this.panel3.TabIndex = 2;
             // 
-            // pictureBox4
+            // dataGridView1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(258, 136);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(433, 278);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 52);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(876, 494);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(84, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Stok Bilgileri";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TrakyaDental.Properties.Resources.goBack_2x;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel4
             // 
@@ -269,7 +306,23 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // Form1
+            // stokHareket1
+            // 
+            this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stokHareket1.Location = new System.Drawing.Point(313, 218);
+            this.stokHareket1.Name = "stokHareket1";
+            this.stokHareket1.Size = new System.Drawing.Size(241, 151);
+            this.stokHareket1.TabIndex = 14;
+            // 
+            // urunDetay1
+            // 
+            this.urunDetay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.urunDetay1.Location = new System.Drawing.Point(130, 95);
+            this.urunDetay1.Name = "urunDetay1";
+            this.urunDetay1.Size = new System.Drawing.Size(640, 400);
+            this.urunDetay1.TabIndex = 13;
+            // 
+            // StokIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -282,19 +335,22 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "StokIslemleri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.StokIslemleri_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbKlinikIslemleri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStokIslemleri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaliIslemler)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHastaIslemleri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStokHareketi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAra)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,16 +365,21 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbHastaIslemleri;
+        private System.Windows.Forms.PictureBox pbAra;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pbKlinikIslemleri;
+        private System.Windows.Forms.PictureBox pbStokHareketi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pbStokIslemleri;
+        private System.Windows.Forms.PictureBox pbSil;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pbMaliIslemler;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbDetay;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Stok.UrunDetay urunDetay1;
+        private Stok.StokHareket stokHareket1;
     }
 }
 

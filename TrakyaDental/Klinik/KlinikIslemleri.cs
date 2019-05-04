@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace TrakyaDental
 {
-    public partial class Form1 : Form
+    public partial class KlinikIslemleri : Form
     {
 
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
         Point lastLocation;
-        public Form1()
+        public KlinikIslemleri()
         {
             InitializeComponent();
         }
@@ -48,35 +48,44 @@ namespace TrakyaDental
             mouseDown = false;
         }
 
-        private void pbHastaIslemleri_Click(object sender, EventArgs e)
+        private void pbPersonelBilgileri_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var hastaIslemForm = new HastaIslemleri();
-            hastaIslemForm.ShowDialog();
-            this.Dispose();
+            blue.Top = pbPersonelBilgileri.Top;
+            personelBilgileri1.Show();
+            randevuDefteri1.Hide();
+            smSveEmailIslemleri1.Hide();
         }
 
-        private void pbMaliIslemler_Click(object sender, EventArgs e)
+        private void pbRandevuDefteri_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var maliIslemForm = new MaliIslemleri();
-            maliIslemForm.ShowDialog();
-            this.Dispose();
+            blue.Top = pbRandevuDefteri.Top;
+            randevuDefteri1.Show();
+            smSveEmailIslemleri1.Hide();
+            personelBilgileri1.Hide();
         }
 
-        private void pbKlinikIslemleri_Click(object sender, EventArgs e)
+        private void pbSMSveEmail_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var klinikForm = new KlinikIslemleri();
-            klinikForm.ShowDialog();
-            this.Dispose();
+            blue.Top = pbSMSveEmail.Top;
+            smSveEmailIslemleri1.Show();
+            personelBilgileri1.Hide();
+            randevuDefteri1.Hide();
         }
 
-        private void pbStokIslemleri_Click(object sender, EventArgs e)
+        private void KlinikIslemleri_Load(object sender, EventArgs e)
+        {
+            blue.Top = pbPersonelBilgileri.Top;
+            personelBilgileri1.Show();
+            randevuDefteri1.Hide();
+            smSveEmailIslemleri1.Hide();
+
+        }
+
+        private void pbBackToMainScreen_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var stok = new StokIslemleri();
-            stok.ShowDialog();
+            var anasayfa = new Form1();
+            anasayfa.ShowDialog();
             this.Dispose();
         }
 

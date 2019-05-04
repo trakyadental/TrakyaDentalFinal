@@ -46,52 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoktorOdemeleri.cs">
+    <Compile Include="Hasta\RandevularFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta\RandevularFORM.Designer.cs">
+      <DependentUpon>RandevularFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta\RecetelerFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta\RecetelerFORM.Designer.cs">
+      <DependentUpon>RecetelerFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta\HastaEkle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoktorOdemeleri.Designer.cs">
+    <Compile Include="Hasta\HastaEkle.Designer.cs">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta\HastaTedavileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hasta\HastaTedavileri.Designer.cs">
+      <DependentUpon>HastaTedavileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mali\DoktorOdemeleri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mali\DoktorOdemeleri.Designer.cs">
       <DependentUpon>DoktorOdemeleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="GelirGiderRaporu.cs">
+    <Compile Include="Mali\GelirGiderRaporu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GelirGiderRaporu.Designer.cs">
+    <Compile Include="Mali\GelirGiderRaporu.Designer.cs">
       <DependentUpon>GelirGiderRaporu.cs</DependentUpon>
     </Compile>
-    <Compile Include="LaboratuvarOdemeleri.cs">
+    <Compile Include="Mali\LaboratuvarOdemeleri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LaboratuvarOdemeleri.Designer.cs">
+    <Compile Include="Mali\LaboratuvarOdemeleri.Designer.cs">
       <DependentUpon>LaboratuvarOdemeleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="OdemeIslemleri.cs">
+    <Compile Include="Mali\OdemeIslemleri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OdemeIslemleri.Designer.cs">
+    <Compile Include="Mali\OdemeIslemleri.Designer.cs">
       <DependentUpon>OdemeIslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelBilgileri.cs">
+    <Compile Include="Klinik\PersonelBilgileri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PersonelBilgileri.Designer.cs">
+    <Compile Include="Klinik\PersonelBilgileri.Designer.cs">
       <DependentUpon>PersonelBilgileri.cs</DependentUpon>
     </Compile>
-    <Compile Include="KlinikIslemleri.cs">
+    <Compile Include="Klinik\KlinikIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KlinikIslemleri.Designer.cs">
+    <Compile Include="Klinik\KlinikIslemleri.Designer.cs">
       <DependentUpon>KlinikIslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="MaliIslemleri.cs">
+    <Compile Include="Mali\MaliIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MaliIslemleri.Designer.cs">
+    <Compile Include="Mali\MaliIslemleri.Designer.cs">
       <DependentUpon>MaliIslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaIslemleri.cs">
+    <Compile Include="Hasta\HastaIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HastaIslemleri.Designer.cs">
+    <Compile Include="Hasta\HastaIslemleri.Designer.cs">
       <DependentUpon>HastaIslemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -100,54 +124,84 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelOdemeleri.cs">
+    <Compile Include="Mali\PersonelOdemeleri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PersonelOdemeleri.Designer.cs">
+    <Compile Include="Mali\PersonelOdemeleri.Designer.cs">
       <DependentUpon>PersonelOdemeleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandevuDefteri.cs">
+    <Compile Include="Klinik\RandevuDefteri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RandevuDefteri.Designer.cs">
+    <Compile Include="Klinik\RandevuDefteri.Designer.cs">
       <DependentUpon>RandevuDefteri.cs</DependentUpon>
     </Compile>
-    <Compile Include="SMSveEmailIslemleri.cs">
+    <Compile Include="Klinik\SMSveEmailIslemleri.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SMSveEmailIslemleri.Designer.cs">
+    <Compile Include="Klinik\SMSveEmailIslemleri.Designer.cs">
       <DependentUpon>SMSveEmailIslemleri.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DoktorOdemeleri.resx">
+    <Compile Include="Stok\StokIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok\StokIslemleri.Designer.cs">
+      <DependentUpon>StokIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok\StokHareket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stok\StokHareket.Designer.cs">
+      <DependentUpon>StokHareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok\UrunDetay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stok\UrunDetay.Designer.cs">
+      <DependentUpon>UrunDetay.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Hasta\RandevularFORM.resx">
+      <DependentUpon>RandevularFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\RecetelerFORM.resx">
+      <DependentUpon>RecetelerFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\HastaEkle.resx">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\HastaTedavileri.resx">
+      <DependentUpon>HastaTedavileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali\DoktorOdemeleri.resx">
       <DependentUpon>DoktorOdemeleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GelirGiderRaporu.resx">
+    <EmbeddedResource Include="Mali\GelirGiderRaporu.resx">
       <DependentUpon>GelirGiderRaporu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LaboratuvarOdemeleri.resx">
+    <EmbeddedResource Include="Mali\LaboratuvarOdemeleri.resx">
       <DependentUpon>LaboratuvarOdemeleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OdemeIslemleri.resx">
+    <EmbeddedResource Include="Mali\OdemeIslemleri.resx">
       <DependentUpon>OdemeIslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelBilgileri.resx">
+    <EmbeddedResource Include="Klinik\PersonelBilgileri.resx">
       <DependentUpon>PersonelBilgileri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KlinikIslemleri.resx">
+    <EmbeddedResource Include="Klinik\KlinikIslemleri.resx">
       <DependentUpon>KlinikIslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MaliIslemleri.resx">
+    <EmbeddedResource Include="Mali\MaliIslemleri.resx">
       <DependentUpon>MaliIslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HastaIslemleri.resx">
+    <EmbeddedResource Include="Hasta\HastaIslemleri.resx">
       <DependentUpon>HastaIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelOdemeleri.resx">
+    <EmbeddedResource Include="Mali\PersonelOdemeleri.resx">
       <DependentUpon>PersonelOdemeleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -158,12 +212,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RandevuDefteri.resx">
+    <EmbeddedResource Include="Klinik\RandevuDefteri.resx">
       <DependentUpon>RandevuDefteri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SMSveEmailIslemleri.resx">
+    <EmbeddedResource Include="Klinik\SMSveEmailIslemleri.resx">
       <DependentUpon>SMSveEmailIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok\StokIslemleri.resx">
+      <DependentUpon>StokIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok\StokHareket.resx">
+      <DependentUpon>StokHareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok\UrunDetay.resx">
+      <DependentUpon>UrunDetay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -177,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goBack%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightArrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
